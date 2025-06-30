@@ -1,0 +1,110 @@
+body {
+  font-family: 'Cinzel', serif;
+  background: linear-gradient(to bottom, #1a1a1a, #000);
+  color: #FFD700;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.container { padding: 40px 20px; }
+.title { font-size: 36px; text-shadow: 2px 2px 8px gold; }
+.welcome { margin-top: 10px; color: #fff; }
+.slot-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  grid-template-rows: repeat(5, 80px);
+  gap: 10px;
+  justify-content: center;
+  margin: 30px auto;
+}
+.slot-grid img {
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
+  border: 3px solid #FFD700;
+  background: #222;
+  box-shadow: 0 0 10px #FFD700;
+}
+.glow {
+  animation: glow 1s infinite alternate;
+  border: 3px solid gold;
+  box-shadow: 0 0 20px yellow;
+}
+@keyframes glow {
+  0%   { box-shadow: 0 0 10px gold; }
+  100% { box-shadow: 0 0 25px yellow; }
+}
+@keyframes drop {
+  0% { transform: translateY(-200px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+.slot-img { animation: drop 0.5s ease-out; }
+.controls { margin-top: 20px; }
+.btn-spin {
+  background: #FFD700;
+  color: #000;
+  font-size: 20px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #FFD700;
+}
+.btn-spin:hover { background: #fff200; }
+.result-msg {
+  color: #0f0;
+  font-size: 18px;
+  margin-top: 10px;
+}
+@media (max-width: 600px) {
+  .slot-grid {
+    grid-template-columns: repeat(5, 55px);
+    grid-template-rows: repeat(5, 55px);
+    gap: 6px;
+  }
+  .slot-grid img {
+    width: 55px;
+    height: 55px;
+  }
+  .btn-spin {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .title { font-size: 28px; }
+}
+
+.auth-body {
+  background: #111;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.auth-container {
+  background: #222;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #FFD700;
+  text-align: center;
+}
+.auth-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+}
+.auth-container button {
+  background: #FFD700;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.auth-container a {
+  color: #FFD700;
+  text-decoration: none;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎰 Arif Slot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🎰 Arif Slot</h1>
+    <p>Selamat datang, <span id="username"></span>! | Koin: <span id="coins">100</span></p>
+    <p id="result" class="result-msg">Tekan tombol SPIN untuk bermain!</p>
+    <div id="slotGrid" class="slot-grid"></div>
+    <div class="controls">
+      <button id="btn-spin" class="btn-spin">🎲 SPIN</button>
+    </div>
+  </div>
+  <audio id="bgm" src="sounds/music.mp3" loop></audio>
+  <audio id="spinSound" src="sounds/spin.mp3"></audio>
+  <audio id="winSound" src="sounds/win.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
